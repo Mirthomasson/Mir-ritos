@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Mir-itos</title>
+	</head>
+	<body>
+		<section id="overlay">
+			<div class="topnav">
+				<a class="active" href="#home">Home</a>
+				<a href="#pics">Pics</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+			<img src="images/burrito.jpg" alt="Mir-rito's logo" id="logo" />
+			<h1 class="logo-name">Mir-ritos!</h1>
+			<hr />
+			<form action="submission.html" method="POST">
+				<h1>Build your Burrito!</h1>
+
+				<section class="tortilla">
+					<label for="amount">Which tortilla would you like?</label>
+					<input type="radio" name="tortilla" id="flour" value="flour" />
+					<label for="flour">Flour</label>
+					<input type="radio" name="tortilla" id="corn" value="corn" />
+					<label for="corn">Corn</label>
+				</section>
+				<hr />
+				<section class="protein">
+					<label for="protein">What type of protein would you like?</label>
+					<select name="protein" id="protein">
+						<option value="beef">Beef</option>
+						<option value="chicken">Chicken</option>
+						<option value="chorizo">Chorizo</option>
+						<option value="bean">Black Bean</option>
+					</select>
+				</section>
+				<hr />
+
+				<section class="toppings">
+					<span>What toppings would you like?</span>
+					<br />
+					<input type="checkbox" name="topping" id="lettuce" value="lettuce" />
+					<label for="lettuce">Lettuce</label>
+					<input type="checkbox" name="topping" id="tomato" value="tomato" />
+					<label for="tomato">Tomato</label>
+					<input type="checkbox" name="topping" id="onion" value="onion" />
+					<label for="onion">Onion</label>
+					<input type="checkbox" name="topping" id="peppers" value="peppers" />
+					<label for="peppers">Peppers</label>
+				</section>
+				<hr />
+
+				<section class="cheesy">
+					<span>Would you like to add cheese?</span>
+					<br />
+					<input type="radio" name="cheese" id="yes" value="yes" />
+					<label for="yes">Yes</label>
+					<input type="radio" name="cheese" id="no" value="yes" />
+					<label for="no">No</label>
+				</section>
+				<hr />
+
+				<section class="premium-topping">
+					<label for="premium-topping"
+						>What you like to add a premium topping?</label
+					>
+					<input type="checkbox" name="guac" id="guac" value="guac" />
+					<label for="guac">Guacamole</label>
+					<input type="checkbox" name="sour" id="sour" value="sour" />
+					<label for="sour">Sour-Cream</label>
+				</section>
+				<hr />
+
+				<section class="cooked">
+					<label for="doneness">How toasty do you want your burrito?</label>
+					<br />
+					<span>Soft</span>
+					<input
+						type="range"
+						name="doneness"
+						id="doneness"
+						value="3"
+						min="1"
+						max="5"
+					/>
+					<span>Crispy</span>
+				</section>
+				<hr />
+
+				<section class="sauce-selection">
+					<label for="sauce">What type of sauce would you like?</label>
+					<input list="sauces" id="sauce" name="sauce" />
+					<datalist id="sauces">
+						<option value="Corn-salsa"></option>
+						<option value="Chipotle"></option>
+						<option value="Chalula"></option>
+						<option value="Salsa Verde"></option>
+					</datalist>
+				</section>
+				<hr />
+				<section class="extra-info">
+					<label for="extra">Anything else you want to add?</label>
+					<br />
+					<textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+				</section>
+				<hr />
+
+				<section class="submission">
+					<input type="submit" value="Submit" />
+				</section>
+			</form>
+		</section>
+	</body>
+</html>
